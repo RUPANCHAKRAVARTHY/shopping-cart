@@ -1,0 +1,278 @@
+.mainnav {
+  background-color: #7258b8;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+}
+/* .company {
+  color: #000000;
+  font-size: 2rem;
+  font-weight: bolder;
+  font-style: italic;
+  display: inline-block;
+  width: 25%;
+  text-shadow: 1px 1px #e6e6e6;
+  padding: 0rem 1rem;
+  align-self: center;
+} */
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #b12ce6;
+}
+.searchbar {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  border: 1px solid #080102;
+  width: 40%;
+  max-height: 2.5rem;
+  border-radius: 2.5rem;
+  padding: 0.5rem 1rem;
+  justify-content: flex-start;
+}
+.searchbar .search-text {
+  flex-grow: 1;
+  flex-shrink: 1;
+  width: 92%;
+  max-height: 2.5rem;
+  border-radius: 2.5rem;
+  padding: 0.25rem 1rem;
+  border: none;
+}
+.search-text:focus,
+.search-text:active {
+  border: none;
+  outline: none;
+}
+
+.searchicon {
+  align-self: center;
+}
+.users,
+.cart {
+  background-color: rgba(217, 217, 252, 0.1);
+  border-radius: 50%;
+  margin: 0 1rem;
+}
+.icons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.flash-icon {
+  font-size: 1.2rem;
+  padding-right: 0.4rem;
+}
+.flashSales {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 0 1.5rem;
+  color: #2b3445;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.title {
+  color: #2b3445;
+  text-align: center;
+  font-weight: bold;
+}
+.productimage {
+  transition: 0.3s ease-in;
+}
+.productimgcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.75rem 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 13rem;
+  margin: 0 0 1.5rem;
+  transition: 0.3s ease-in;
+  border-radius: 1rem;
+}
+.card:hover {
+  box-shadow: 0 0 10px gray;
+}
+.card:hover .productimage {
+  transform: scale(1.1);
+}
+.card-body {
+  padding: 0.75rem;
+}
+.review {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 0.5rem;
+}
+.number {
+  font-weight: 600;
+}
+.price {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 0.5rem;
+}
+.finalprice {
+  color: #e94560;
+  font-weight: 600;
+  padding: 0 0.5rem;
+}
+.originalprice {
+  color: #7d879c;
+  font-weight: 600;
+  text-decoration: line-through;
+  padding: 0 0.5rem;
+}
+.numberofitems {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 0 0.5rem;
+}
+.count {
+  align-self: center;
+  width: 4rem;
+  text-align: center;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.increase,
+.decrease {
+  text-align: center;
+}
+.decreasebtn,
+.increasebtn {
+  display: flex;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+}
+.cartadd {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 0.5rem;
+}
+.cartadd button {
+  width: 90%;
+}
+.Cartbox {
+  background-color: rgba(255, 255, 255, 0.8);
+  overflow-x: hidden;
+  position: fixed;
+  top: 20;
+  right: 0;
+  height: 100%;
+  z-index: 5;
+  transition: 0.5s;
+  padding-top: 0.5rem;
+}
+
+.noItems {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 18rem;
+}
+.noItems h4 {
+  align-self: center;
+  color: #b10037;
+}
+.closeIcon {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.pricerow {
+  font-size: 0.8rem;
+  color: #2b3445;
+}
+.cartcard {
+  border: 1px solid #b100387c;
+  margin-top: 0.4rem;
+  padding: 0.3rem;
+  background-color: #ff7a8e1c !important;
+}
+.carttitle,
+.cartprice {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #e94560;
+}
+
+.totalvalue {
+  font-weight: bold;
+  text-align: center;
+  padding: 1rem 1rem;
+  position: fixed;
+  bottom: 0;
+}
+
+.subtotal {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #e94560;
+}
+.subtotalvalue {
+  padding: 1rem;
+}
+.checkoutbtn {
+  display: flex;
+  justify-content: center;
+}
+.checkoutbtn > button {
+  width: 100%;
+}
+.closeiconx {
+  cursor: pointer;
+}
+.cart-side-box {
+  width: 20%;
+  border-left: 3px solid #e94560;
+}
+.close-side-box {
+  width: 0;
+}
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .company {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0.25rem;
+  }
+  .searchbar {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 0.25rem;
+  }
+  .icons {
+    width: 100%;
+    /* margin: 0 auto; */
+    justify-content: center;
+  }
+  .cart-side-box {
+    width: 50%;
+  }
+}
+@media (max-width: 768px) {
+  .cart-side-box {
+    width: 60%;
+  }
+}
